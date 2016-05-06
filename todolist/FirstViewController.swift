@@ -47,6 +47,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
+    
+    // para eliminar una fila de la tabla
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle:  UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            toDoList.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
+            
+            toDoLisTable.reloadData()
+        }
+    }
 
 
 }
