@@ -99,7 +99,6 @@
 				TargetAttributes = {
 					E3300CD01CDB4D060007CA4B = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = J56A6Z8QHA;
 					};
 				};
 			};
@@ -293,6 +292,7 @@
 				E3300CE71CDB4D060007CA4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
